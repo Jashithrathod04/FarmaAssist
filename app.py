@@ -83,7 +83,7 @@ if st.button("🌾 Get Smart Advice"):
         st.warning("Please enter your location.")
     else:
         with st.spinner("Consulting AI farming expert..."):
-            response = model.generate_content(build_prompt()
+            response = model.generate_content(build_prompt())
             st.success("Here’s your AI-generated farming advice:")
 
             st.markdown(response.text)
